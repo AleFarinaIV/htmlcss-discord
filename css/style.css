@@ -5,25 +5,39 @@ html {
         box-sizing: border-box;
     }
     body {
+        font-family: Arial, sans-serif;
         header {
-            background-color: rgb(131 213 255 / 59%);
+            background-color: rgb(0 79 223 / 88%);
             .container {
                 max-width: 1200px;
                 margin: 0 auto;
                 .row {
                     display: flex;
                     flex-wrap: wrap;
+                    align-items: center;
                     .content {
-                        padding: 5px 5px;
                         margin: 10px 0;
-                        background-color: rgb(255 187 0);
-                        border: 1px solid black
+                        font-size: 14px;
+                        .mt-10 {
+                            margin-top: 10px;
+                        }
                     }
                     .col-20 {
                         width: 20%;
                         display: inline-block;
                         .ta-end{
                             text-align: end;
+                        }
+                        .loginBg {
+                            background-color: white;
+                            padding: 7px 12px;
+                            border-radius: 15px;
+                            color: black;
+                            font-weight: bold;
+                            text-decoration: none;
+                        }
+                        a:hover {
+                            color: rgb(0 79 223 / 88%);
                         }
                     }
                     .col-60 {
@@ -32,7 +46,15 @@ html {
                             list-style-type: none;
                             text-align: center;
                             li {
-                                display: inline-block
+                                display: inline-block;
+                                margin: 0 20px;
+                                a {
+                                    text-decoration: none;
+                                    color: white;
+                                }
+                                a:hover {
+                                    text-decoration: underline;
+                                }
                             }
                         }
                     }
@@ -40,9 +62,11 @@ html {
             }
         }
         main {
-            .bg-blue {
-                max-width: 100%;
-                background-color: blue;
+            .bg-jumbo {
+                background-image: url(../img/jumbo.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 530px;
                 .container {
                     max-width: 900px;
                     margin: 0 auto;
@@ -53,7 +77,33 @@ html {
                         .col {
                             width: 900px;
                             height: 300px;
-                            background-color: violet;  
+                            .content {
+                                text-align: center;
+                                color: white;
+                                padding: 40px 60px;
+                                h1 {
+                                    font-size: 40px;
+                                    margin-top: 110px;
+                                }
+                                p {
+                                    font-size: 20px;
+                                    margin-top: 35px;
+                                    line-height: 33px;
+                                }
+                                button {
+                                    display: inline-block;
+                                    margin: 15px 6px 0px 15px;
+                                    background-color: white;
+                                    padding: 11px 12px 10px 12px;
+                                    border-radius: 20px;
+                                    font-size: 21px;
+                                    color: black;
+                                    .blackBg {
+                                        background-color: black;
+                                        padding: 0 0 0 0;
+                                    }
+                                }
+                            }
                         }
                     }
                 }
