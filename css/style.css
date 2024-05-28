@@ -187,7 +187,7 @@ html {
                 .container-xl {
                     max-width: 1200px;
                     margin: 0 auto;
-                    padding: 55px 0;
+                    padding: 80px 0 240px 0;
                     .row {
                         display: flex;
                         flex-wrap: wrap;
@@ -204,10 +204,22 @@ html {
                                 padding: 15px 245px;
                             }
                             h3 {
+                                padding-top: 40px;
                                 background-image: url(../img/stars.svg);
                                 background-repeat: no-repeat;
+                                background-position: center;
                                 height: 50px;
-                                font-size: 25px;
+                                background-size: 465px;
+                                font-size: 24px;
+                            }
+                            button {
+                                display: inline-block;
+                                margin: 80px 6px 0px 15px;
+                                background-color: white;
+                                padding: 11px 12px 10px 12px;
+                                border-radius: 20px;
+                                font-size: 21px;
+                                color: black;
                             }
                         }
                     }
@@ -215,7 +227,7 @@ html {
             }
         }
         footer {
-            border-bottom: 2px solid white;
+            border-bottom: 1px solid white;
             .top-footer {
                 max-width: 100%;
                 background-color: rgb(39 39 39);
@@ -234,9 +246,28 @@ html {
                                 h1 {
                                     color: rgb(122 108 227);
                                     padding-right: 20px;
+                                    padding-bottom: 15px;
                                 }
-                                .img-size {
-                                    width: 23px;
+                                .language {
+                                    display: flex;
+                                    align-items: center;
+                                    text-decoration: none;
+                                    color: white;
+                                    .img-size {
+                                        width: 25px;
+                                    }
+                                    p {
+                                        margin-left: 2px;
+                                        margin-top: 2px;
+                                    }
+                                }
+                                .icons {
+                                color: white;
+                                font-size: larger;
+                                margin-top: 20px;
+                                i {
+                                    margin-right: 20px;
+                                }
                                 }
                             }
 
@@ -282,15 +313,24 @@ html {
                         justify-content: space-between;
                         padding: 15px 0;
                         .col-logo {
-                            background-color: rgb(255 182 182 / 86%);
                             .content {
                                 padding: 3px 7px 3px 7px;
                             }
                         }
                         .col-bottone {
-                            background-color: rgb(255 182 182 / 86%);
                             .content {
-                                padding: 3px 7px 3px 7px;
+                                background-color: rgb(122 108 227);
+                                color: white;
+                                font-size: 12px;
+                                padding: 6px 12px 6px 12px;
+                                border-radius: 15px;
+                                content:hover {
+                                    background-color: rgba(255, 255, 255, 0.353);
+                                }
+                                a {
+                                    text-decoration: none;
+                                    color: white;
+                                }
                             }
                         }
                     }
